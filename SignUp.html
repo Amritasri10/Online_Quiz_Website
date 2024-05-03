@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>
+     Registration Form   
+    </title>
+    <link rel="stylesheet" href="css/SignUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3579a2583b.js" crossorigin="anonymous"></script>
+    <script src="Js/LogIn.js"></script>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create An Account</h1>
+    <div class="ic">
+        <div class="fc">
+            <a href="#" class="g"><i class="fa-brands fa-google"></i>Sign In with Google</a>
+            <a href="#" class="t"><i class="fa-brands fa-twitter"></i>Sign In with Twitter</a>
+            <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i>Sign In with Facebook</a>
+        </div>
+        <div class="sc">
+            <form action="/sign_up" method="post" name="myform" >
+                <div class="icon"> <input type="text" class="input" name="name"  id="name" value="" required placeholder="Enter Name" >
+                    <i class="fa-solid fa-user"></i></div>
+                <div class="icon"><input type="email" class="input" name="email" id="email" value="" required placeholder="Enter Email" >
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="icon"><input type="tel" class="input" id="phone" name="phone" value="" required placeholder="Enter Phone No." >
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="icon"><input type="password" class="input" name="pass" id="pass" value="" required placeholder="Enter Password" >
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="icon"><input type="date" class="input" id="dob"  name="dob" value="" required placeholder="Enter D.O.B" >
+                </div>
+                <div class="icon">              
+                    <select class="nationality" value="" name="nationality">
+                      <option class="op" selected>Select</option>
+                      <option class="op" value="Indian">Indian</option>
+                      <option class="op" value="American">American</option>
+                      <option class="op" value="African">African</option>
+                      <option class="op" value="German">German</option>
+                    </select>
+                </div>
+                <input type="checkbox" id="cb">
+                <label for="cb" class="terms">I Accept the <a href="#">Terms & Conditions</a></label>
+                <p class="alert"></p>
+                <button id="btn" type="submit" onsubmit=" return validateform();"> <span>&#8592;</span><a href="Index.html"> SIGN UP</a> </button>
+            </form>
+        </div>
+    </div>
+    <p class="log">Already Have an Account? <a href="Login.html">Login Now</a> </p>
+    </div>
+</body>
+</html>

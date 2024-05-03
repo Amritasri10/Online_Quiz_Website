@@ -1,0 +1,210 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+.container{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width:100%;
+	height: 100vh;
+    background:url('../Images/bg12.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container h1{
+	margin-bottom: 40px;
+	font-weight: bold;
+	color:black;
+}
+.ic{
+	align-items:center ;
+	flex-wrap: wrap;
+	display: flex;
+	background: #fff;
+	width:90%;
+	max-width: 800px;
+	box-shadow: 0 0 10px 0 black; 
+}
+.fc{
+	padding: 50px;
+	flex-basis: 50%;
+	flex-grow: 1;
+
+}
+.sc{
+	padding: 50px;
+	background:url('../Images/bg11.webp');
+	background-size: cover;
+    background-repeat: no-repeat;
+	flex-basis: 50%;
+	flex-grow: 1;
+	color:#fff;
+	box-shadow: 0 0 10px 0 black; 
+}
+
+.input{
+	width:100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid wheat;
+	outline: none;
+	color: wheat;
+	font-size: 12px;
+	background: transparent;
+}
+input:focus{
+	border-color: #292929;
+	box-shadow: 0 0 8px 0 white;
+}
+select:focus{
+    box-shadow: 0 0 8px 0 white;
+}
+.icon input:focus +i{
+	color:white;
+}
+.icon input[type=text],.icon input[type=email],.icon input[type=password],
+.icon input[type=date],.icon input[type=tel],.icon select{
+    padding-left: 40px;
+}
+.icon{
+    position: relative;
+}
+.icon input[type="date"]::-webkit-inner-spin-button,
+.icon input[type="date"]::-webkit-calendar-picker-indicator {
+ background-color: #fff;
+}
+.icon i{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transition: .3s;
+}
+.icon input[type=password]:focus+i,.icon input[type=date]:focus+i,
+.icon input[type=email]:focus+i,.icon input[type=text]:focus+i,
+.icon input[type=tel]:focus+i,.icon select:focus+i{
+    color:#292929;
+}
+::placeholder{
+	color:white;
+}
+input[type=checkbox]{
+	margin-top: 14px;
+}
+.nationality{
+    font-size: 12px;
+    padding: 10px 8px 10px 14px;
+    border: 1px solid wheat;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    background: transparent;
+    line-height: 1;
+    border-radius: 0;
+  }
+
+.op{
+    color:white;
+    background-color:darkcyan;
+}
+.sc button{
+	width: 100%;
+	background: white;
+	padding: 10px;
+	border:0;
+	outline: none;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: background 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sc button:hover{
+	font-weight: 500;
+	background: black;
+	color: white;
+}
+.sc button span{
+	display: inline-block;
+	width:0px;
+	overflow:hidden;
+	transition: width 0.5s;
+}
+.sc button a{
+	text-decoration: none;
+	color: #292929;
+}
+.sc button a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.sc button:hover span{
+	width:30px;
+}
+.fc a{
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+	min-width: 250px;
+	color:white;
+	font-size:14px;
+	padding:15px 30px;
+	text-decoration: none;
+}
+.fc a i{
+	font-size: 18px;
+	margin-right: 10px;
+}
+.g{
+background: #ea4335;
+box-shadow: 0 0 20px 0 black; 
+transition: background 0.5s;
+}
+.t{
+background: #1da1f2;
+box-shadow: 0 0 20px 0 black; 
+transition: background 0.5s;
+display: flex;
+}
+.fb{
+background: #1778f2;
+box-shadow: 0 0 20px 0 black;
+transition: background 0.5s;
+display: flex; 
+}
+.g:hover{
+	color: #ea4335;
+	background: #fff;
+}
+.t:hover{
+	color:#1da1f2;
+	background: #fff;
+}
+.fb:hover{
+	color:#1778f2;
+	background: #fff;
+}
+.terms a{
+    color: white;
+	
+}
+.log{
+	margin-top: 30px;
+	color:black;
+	font-size: larger;
+	font-weight: bold;	
+}
+.log a{
+	color:black;
+	text-decoration:none;
+	font-size: larger;
+}
+.log a:hover{
+	color:#ea4335;
+}

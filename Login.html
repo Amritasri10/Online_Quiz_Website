@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title> Log In  </title>
+    <link rel="stylesheet" href="css/Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3579a2583b.js" crossorigin="anonymous"></script>
+    <script src="Js/LogIn.js"></script>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Log In to Your Account</h1>
+        <div class="ic">
+            <div class="sc">
+            <form action="/Login" action="post" name="myform" >
+                <div class="icon"><input type="email" class="input" name="email" id="email" value="" required placeholder="Enter Email" >
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="icon"><input type="password" class="input" name="pass" id="pass" value="" required placeholder="Enter Password" >
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <button id="btn" type="submit""><a href="Index.html"> LOG IN </a> </button>
+            </form>
+                <div class="fc">
+                    <p class="log">Don't Have an Account? <a href="SignUp.html">Sign Up</a></p>
+                </div>
+                <div class="social-icon">
+                    <a href="#" class="g"><i class="fa-brands fa-google"></i>Sign In with Google</a>
+                    <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i>Sign In with Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
